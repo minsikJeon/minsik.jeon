@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;max-width:850px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -22,23 +22,23 @@
                 <p class="name" style="text-align: center;">
                   Minsik Jeon
                 </p>
-                <p> <strong> HOMEPAGE IN PROGRESS!!! </strong></p>
-                <p>I'm a research scientist at <a href="https://www.add.re.kr/kps">Agency for Defense Development (ADD) </a> in South Korea.
-                </p>
-                <p>
-                  At ADD I've worked on TODO</a>.
+                <p class="bigger">
+                I am a Robotics & Computer Vision researcher at the <a href="https://www.add.re.kr/kps" class="bigger">Agency for Defense Development (ADD)</a> in the South Korea.
+                My research interests lie in computer vision and robotics, with a special focus on <em><strong>(a)</strong> generalizable and adaptable perception system robust
+                across diverse environments, <strong>(b)</strong> Open-world, multi-modal perception, and <strong>(c)</strong>
+                 uncertainty-aware perception</em>.  I completed my bachelor's degree (Summa Cum Laude) in School of Computing at KAIST (Korea Advanced Institute of Science and Technology).
                 </p>
                 <p style="text-align:center">
                   <a href="mikejeon001123@gmail.com">Email</a> &nbsp;/&nbsp;
                   <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
                   <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
                   <a href="https://scholar.google.com/citations?user=Wf9lgBMAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/minsik-jeon-05b05326a/">LinkedIn</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/minsik-jeon-05b05326a/">LinkedIn</a>
                   <!-- <a href="https://github.com/jonbarron/">Github</a> -->
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/smallminsik.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/smallminsik.png" class="hoverZoomLink"></a>
+                <a href="images/smallminsik.png"><img style="width:80%;max-width:80%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/smallminsik.png" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -47,7 +47,15 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research Interests</h2>
                 <p>
-                  I'm interested in computer vision, Robotics, blahblah. Most of my research is about TODO.
+                  With a great interest in <em>Computer Vision</em> and <em>Robotics</em>, my research goal is to improve generalizability and robustness of 
+                  robot perception system in diverse environments through self-supervised adaptation. My current & future interests are as follows:
+                  <p>
+                    <span class="smallicon">&#9679;</span> Domain Adaptation & Generalization<br>
+                  <span class="smallicon">&#9679;</span> Multi-modal, Open-world perception<br>
+                  <span class="smallicon">&#9679;</span> Uncertainty-aware perception<br>
+                  <span class="smallicon">&#9679;</span> Self-supervised Learning<br>
+                  <span class="smallicon">&#9679;</span> Off-road applications in robotics
+                </p>
                 </p>
               </td>
             </tr>
@@ -55,7 +63,15 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Education</h2>
                 <p>
-                  KAIST. GSHS.
+                  <div class="education-entry">
+                    <h3><span class="bigicon">&#8226;</span> <em>Korea Advanced Institute of Science and Technology (KAIST)</em>, 2018.03-2022.02</h3>
+                    <p><span class="smallicon">&#9679;</span> <em>B.S. in Computer Science, Electrical Engineering (Double Major)</em></p>
+                    <p><span class="smallicon">&#9679;</span> <em><strong>GPA: 4.01/4.30 , Summa Cum Laude</strong> ; 
+                      Dean's List 2020 Fall, 2021 Spring, 2021 Fall</em></p>
+                    <h3><span class="icon">&#9679;</span> <em>Gyeonggi Science High School for Gifted Students</em>, 2015.03-2018.02</h3>
+                    <p><span class="smallicon">&#9679;</span> <em>High school for talented students in math and science</em></p>
+                  </div>
+                  
                 </p>
               </td>
             </tr>
@@ -139,7 +155,6 @@
           
           
           <!--   ADD 2023: ATRAS  -->
-          <tr onmouseout="iac_stop()" onmouseover="iac_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='ATRAS_img'>
@@ -149,29 +164,58 @@
                 </div>
                 <img src='images/iac_car_1.jpg' width="150%" height="100%">
               </div>
-              <script type="text/javascript">
-                function iac_start() {
-                  document.getElementById('ATRAS_img').style.opacity = "1";
-                }
-
-                function iac_stop() {
-                  document.getElementById('ATRAS_img').style.opacity = "0";
-                }
-                iac_stop()
-              </script>
             </td>
             <td style="padding-inline:100px;padding-block:20px;width:75%;vertical-align:middle">
-                <span class="papertitle">ATRAS</span>
+                <span class="papertitle">Multi-robot cooperative autonomous driving</span>
               <br>
                 Agency for Defense Development, 2023-Present
               <br>
               <p></p>
               <p>
-                Developing a road segmentation algorithm using Aerial Images from UAV. Stitch aerial images using UAV pose & gps information, deep-learning based road segmentation.
+                Developing a BEV traversability map for an UGV using aerial images obtained with an UAV.
+                Stitching aerial images using UAV poses and GPS information; deep-learning-based road segmentation.
+              </p>
+            </td>
+          <!--   ADD 2023: ATRAS  -->
+          
+
+
+          <!--   ADD 2023: JH  -->
+          <tr onmouseout="mooin_stop()" onmouseover="mooin_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mooin_image'>
+                  <img src='images/iac_team_1.jpg' width="150%" height="100%">
+                <!-- <source src="images/da-raw.gif" width="100%"> -->
+                <!-- Your browser does not support the video tag. -->
+                </div>
+                <img src='images/iac_car_1.jpg' width="150%" height="100%">
+              </div>
+              <script type="text/javascript">
+                function mooin_start() {
+                  document.getElementById('mooin_image').style.opacity = "1";
+                }
+
+                function mooin_stop() {
+                  document.getElementById('mooin_image').style.opacity = "0";
+                }
+                mooin_stop()
+              </script>
+            </td>
+            <td style="padding-inline:100px;padding-block:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">Adaptive Path Planning Based on Situational Awareness and Dynamic Model Learning</span>
+              <br>
+                Agency for Defense Development, 2023-Present
+              <br>
+              <p></p>
+              <p>
+                Developing perception and control algorithms for off-road navigation: 
+                Robust moving object detection & tracking in off-road environment,
+                semantic terrain classification map.
               </p>
             </td>
           </tr>
-          <!--   ADD 2023: ATRAS  -->
+          <!--   /ADD 2023: JH -->
 
 
 
@@ -198,7 +242,7 @@
               </script>
             </td>
             <td style="padding-inline:100px;padding-block:20px;width:75%;vertical-align:middle">
-                <span class="papertitle">Mooin</span>
+                <span class="papertitle">Unmanned reconnaissance vehicles development</span>
               <br>
                 Agency for Defense Development, 2023
               <br>
@@ -208,29 +252,27 @@
               </p>
             </td>
           </tr>
-          <!--   ADD 2022  -->
+          <!--   /ADD 2022: Mooin  -->
 
 
             <!--   ADD 2022: Gabyeon  -->
-            <tr onmouseout="iac_stop()" onmouseover="iac_start()">
+            <tr onmouseout="gb_stop()" onmouseover="gb_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='gabyeong_image'>
+                  <div class="two" id='gb_image'>
                     <img src='images/iac_team_1.jpg' width="150%" height="100%">
-                  <!-- <source src="images/da-raw.gif" width="100%"> -->
-                  <!-- Your browser does not support the video tag. -->
                   </div>
                   <img src='images/iac_car_1.jpg' width="150%" height="100%">
                 </div>
                 <script type="text/javascript">
-                  function iac_start() {
-                    document.getElementById('gabyeong_image').style.opacity = "1";
+                  function gb_start() {
+                    document.getElementById('gb_image').style.opacity = "1";
                   }
 
-                  function iac_stop() {
-                    document.getElementById('gabyeong_image').style.opacity = "0";
+                  function gb_stop() {
+                    document.getElementById('gb_image').style.opacity = "0";
                   }
-                  iac_stop()
+                  gb_stop()
                 </script>
               </td>
               <td style="padding-inline:100px;padding-block:20px;width:75%;vertical-align:middle">
@@ -240,8 +282,7 @@
                 <br>
                 <p></p>
                 <p>
-                  Participated in the Indy Autonomous Challenge (IAC), the first autonomous car racing competition to be held in Indianapolis, as an intern for Team KAIST. 
-                  As part of a perception team, I tested algorithms using camera and lidar in a simulation environment.
+                  Developed an open-set object detection method for LiDAR pointcloud.
                 </p>
               </td>
             </tr>
@@ -311,14 +352,24 @@
 
 
             <!--   HYNIX 2020   -->
-            <tr>
+            <tr onmouseout="hynix_stop()" onmouseover="hynix_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='hynix_image'><video  width=150% muted autoplay loop>
-                  <source src="images/nica_concat.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
+                  <div class="two" id='hynix_image'>
+                    <img src='images/SK_Hynix.png' width="150%" height="100%">
                   </div>
+                  <img src='images/raid.png' width="150%" height="100%">
                 </div>
+                <script type="text/javascript">
+                  function hynix_start() {
+                    document.getElementById('hynix_image').style.opacity = "1";
+                  }
+
+                  function hynix_stop() {
+                    document.getElementById('hynix_image').style.opacity = "0";
+                  }
+                  hynix_stop()
+                </script>
               </td>
               <td style="padding-inline:100px;padding-block:20px;width:75%;vertical-align:middle">
                 <span class="papertitle">Performance and Operation Analysis of On-Board RAID</span>
@@ -328,7 +379,8 @@
                 <p></p>
                 <p>
                   <br>
-                  Developed a removal network that addresses the line artifact of SCAPE microscopy image, using CycleGAN-like model and transferring the image into a CFM style.
+                  In Performance analysis team, configured On-board RAID using SSDs and conducted performance evaluations 
+                  for each RAID option.
                 </p>
               </td>
             </tr>
