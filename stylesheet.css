@@ -81,7 +81,7 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 strong {
@@ -132,4 +132,36 @@ h2 {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+.bigicon {
+  margin-right: 5px;
+  font-size: 10px;
+  color: #000; /* White color */
+  text-shadow: 0 0 2px #000; /* Black border */
+}
+
+.smallicon {
+  margin-right: 5px;
+  font-size: 10px;
+  color: #fff; /* White color */
+  text-shadow: 0 0 2px #000; /* Black border */
+}
+
+.education-entry {
+  margin-bottom: 20px;
+}
+.education-entry h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.education-entry p {
+  margin: 5px 0;
+  font-size: 16px;
+  padding-left: 15px; /* Indentation */
+}
+
+.bigger {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 15px;
 }
