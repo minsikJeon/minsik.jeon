@@ -51,6 +51,12 @@
         <h2 class="section-title">Latest News</h2>
         <div class="news-list">
           <div class="news-item">
+            <span class="news-date">Sep 2026</span>
+            <div class="news-content">
+              <strong>New paper on arXiv!</strong> <a href="https://point-4d.github.io/">Point4D</a> is a feed-forward model for long-range 4D motion reconstruction that infers dense per-point 3D trajectories across multi-hundred-frame videos.
+            </div>
+          </div>
+          <div class="news-item">
             <span class="news-date">Jun 2026</span>
             <div class="news-content">
               <strong>Two papers accepted to ECCV 2026!</strong> <a href="https://rayrope.github.io/">RayRoPE</a> is a 3D-aware positional encoding for multi-view transformers that achieves SE(3)-invariant attention adapted to scene geometry. <a href="https://frame-crafter.github.io/">Novel View Synthesis as Video Completion</a> is a framework that reformulates sparse novel view synthesis as low frame-rate video completion using video diffusion models.
@@ -93,8 +99,34 @@
       <section class="section">
         <h2 class="section-title">
           Publications
-          <span class="note">(* denotes equal contribution)</span>
+          <span class="note">(* denotes equal contribution, &dagger; equal advising)</span>
         </h2>
+
+        <!-- Preprint : Point4D -->
+        <article class="pub-card">
+          <div class="pub-thumb">
+            <video muted autoplay loop playsinline>
+              <source src="images/point4d_teaser.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">Point4D: Long-range 4D Motion Reconstruction</h3>
+            <p class="pub-authors">
+              <span class="me">Minsik Jeon</span>, <a href="https://jaykarhade.github.io/">Jay Karhade</a>, <a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan</a>&dagger;, <a href="https://shubhtuls.github.io/">Shubham Tulsiani</a>&dagger;
+            </p>
+            <p class="pub-venue">arXiv, 2026</p>
+            <div class="pub-links">
+              <a href="https://point-4d.github.io/">Project</a>
+              <a href="https://arxiv.org/abs/2609.09145">arXiv</a>
+              <a href="https://github.com/point-4d/Point4D">Code</a>
+              <button class="tldr-btn" onclick="toggleTldr(this)">TL;DR</button>
+            </div>
+            <div class="pub-tldr">
+              A feed-forward model for long-range 4D motion reconstruction that infers dense per-point 3D trajectories across hundreds of frames. By decoding motion for 3D query points instead of 2D pixels, predicted endpoints are directly re-queried across overlapping video chunks, enabling robust long-range tracking under occlusion.
+            </div>
+          </div>
+        </article>
+        <!-- /Preprint : Point4D -->
 
         <!-- Preprint : RayRoPE -->
         <article class="pub-card">
